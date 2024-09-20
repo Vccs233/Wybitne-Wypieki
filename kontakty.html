@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <meta name="description" content="Strona kontaktowa">
+    <link href="styl.css" rel="stylesheet">
+    <link rel="icon" href="img/icon.png" >
+</head>
+   
+</head>
+
+<body>
+   
+    <div id="container">
+        <div id="Nagłówek">
+             <img src="img/logo.jpg">
+             <h1 style="font-family: 'Brastagi', sans-serif;">Wyborne Wypieki</h1>
+        </div>
+
+        
+        <div class="menu">
+            <a class="link" href="informacje.html">Informacje</a>
+            <a class="link" href="galeria.html">Galeria</a>
+            <a class="link" href="index.html">Strona główna</a>
+        </div>
+        <img src="img/ozd.png" width="1300px">
+
+        
+        <div class="kontakt">
+            <form id="f1" action="" method="get">
+<input type="text" name="czas" size="10" />
+</form>
+
+<script>
+function zegar() {
+  var data = new Date();
+  var godzina = data.getHours();
+  var min = data.getMinutes();
+  var sek = data.getSeconds();
+  var terazjest = ""+godzina+
+  ((min<10)?":0":":")+min+
+  ((sek<10)?":0":":")+sek;
+  document.getElementById("f1").czas.value = terazjest;
+  setTimeout("zegar()", 1000);
+}
+zegar();
+</script>
+			<p>Wiktor Orman</p>
+            <p><strong>Numer telefonu:</strong> +48 123 456 789</p>
+            <p><strong>Email:</strong> wiktor.orman@wp.pl</p>
+
+        </div>
+
+        <div id="box">
+       <div class="button-container">
+            <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="button-facebook">Facebook <img src="img/fcb.jpg" alt="Facebook" width="100%"></a>
+        </div>
+        <div class="button-container">
+            <a href="https://www.Instagram.com/" target="_blank" class="button-instagram">Instagram <img src="img/inst.jpg" alt="Instagram" width="100%"></a>
+        </div>
+        <div class="button-container">
+            <a href="https://www.Googlemaps.com/" target="_blank" class="button-maps">Znajdź nas na mapie <img src="img/gmap.jpg" alt="Mapa" width="100%"></a>
+        </div>
+		</div>
+        <img src="img/ozd.png" width="1300px">
+        <div id="stopka">
+            <h1>Wszystkie prawa nie zastrzeżone</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>
