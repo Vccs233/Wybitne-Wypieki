@@ -8,7 +8,7 @@
     <meta name="description" content="Strona kontaktowa">
     <link href="styl.css" rel="stylesheet">
     <link rel="icon" href="img/icon.png" >
-</head>
+    <script type="module" src="./index.js"></script>
    
 </head>
 
@@ -16,7 +16,7 @@
    
     <div id="container">
         <div id="Nagłówek">
-             <img src="img/logo.jpg">
+             <img src="img/logo.jpg" alt="logo">
              <h1 style="font-family: 'Brastagi', sans-serif;">Wyborne Wypieki</h1>
         </div>
 
@@ -26,12 +26,12 @@
             <a class="link" href="galeria.html">Galeria</a>
             <a class="link" href="index.html">Strona główna</a>
         </div>
-        <img src="img/ozd.png" width="1300px">
+<img class="ozdoba" src="img/ozd.png" alt="ozdoba">
 
         
         <div class="kontakt">
-            <form id="f1" action="" method="get">
-<input type="text" name="czas" size="10" />
+            <form id="f1" method="get">
+<input type="text" name="czas" size="10">
 </form>
 
 <script>
@@ -56,20 +56,42 @@ zegar();
 
         <div id="box">
        <div class="button-container">
-            <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="button-facebook">Facebook <img src="img/fcb.jpg" alt="Facebook" width="100%"></a>
+            <a href="https://www.facebook.com/?locale=pl_PL" target="_blank" class="button-facebook">Facebook <img class="bruh" src="img/fcb.jpg" alt="Facebook"></a>
         </div>
         <div class="button-container">
-            <a href="https://www.Instagram.com/" target="_blank" class="button-instagram">Instagram <img src="img/inst.jpg" alt="Instagram" width="100%"></a>
+            <a href="https://www.Instagram.com/" target="_blank" class="button-instagram">Instagram <img class="bruh" src="img/inst.jpg" alt="Instagram" ></a>
         </div>
-        <div class="button-container">
-            <a href="https://www.Googlemaps.com/" target="_blank" class="button-maps">Znajdź nas na mapie <img src="img/gmap.jpg" alt="Mapa" width="100%"></a>
-        </div>
-		</div>
-        <img src="img/ozd.png" width="1300px">
-        <div id="stopka">
+        
+        
+       
+
+        
+    </div>
+  <img class="ozdoba" src="img/ozd.png" alt="ozdoba">
+    <div id="map">
+        <gmp-map
+      center="50.483430, 19.442700"
+      zoom="13"
+      map-id="DEMO_MAP_ID"
+      style="height: 400px"
+    >
+      <gmp-advanced-marker
+        position="50.483430, 19.442700"
+        title="Randomowa Piekarnia"
+      ></gmp-advanced-marker>
+      
+    </gmp-map>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&libraries=maps,marker&v=beta"
+      defer
+    ></script>
+              </div>
+              
+      <img class="ozdoba" src="img/ozd.png" alt="ozdoba">        
+          </div>
+          <div id="stopka">
             <h1>Wszystkie prawa nie zastrzeżone</h1>
         </div>
-    </div>
 
 </body>
 
